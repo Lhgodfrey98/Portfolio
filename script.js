@@ -1,9 +1,17 @@
 function showTab(name, btn) {
-  document.querySelectorAll('.tab-section').forEach(s => s.classList.remove('active'));
-  document.querySelectorAll('nav button').forEach(b => b.classList.remove('active'));
+  document.querySelectorAll('.tab-section').forEach(s =>
+    s.classList.remove('active')
+  );
+  document.querySelectorAll('nav button').forEach(b =>
+    b.classList.remove('active')
+  );
   var el = document.getElementById('tab-' + name);
   if (el) el.classList.add('active');
   btn.classList.add('active');
+  const hero = document.getElementById('home-hero');
+  if (hero) {
+    hero.style.display = name === 'about' ? 'flex' : 'none';
+  }
   window.scrollTo(0, 0);
 }
 
