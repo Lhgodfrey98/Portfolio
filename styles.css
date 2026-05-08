@@ -60,7 +60,7 @@ main{max-width:920px;margin:0 auto;padding:2.5rem 2rem 5rem}
 .exp-item.sky-dot::before{border-color:var(--sky)}.exp-item.sky-dot:hover::before{background:var(--sky)}
 .exp-item.orange-dot::before{border-color:var(--orange)}.exp-item.orange-dot:hover::before{background:var(--orange)}
 .exp-meta{display:flex;align-items:baseline;justify-content:space-between;gap:1rem;margin-bottom:4px}
-.exp-title{font-size:24px;font-weight:700;color:var(--text);line-height:1.2}
+.exp-title{font-size:36px;font-weight:700;color:#000000(--text);line-height:1.2}
 .exp-period{font-size:12px;font-weight:500;color:var(--muted-light);white-space:nowrap}
 .exp-org{font-size:13px;font-weight:600;color:#0d5f78;margin-bottom:10px}
 .exp-bullets{padding-left:1rem;font-size:14px;color:var(--muted);line-height:1.8}
