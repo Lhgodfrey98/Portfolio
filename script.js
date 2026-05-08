@@ -10,8 +10,7 @@ function showTab(name, btn) {
   btn.classList.add('active');
   const hero = document.getElementById('home-hero');
   if (hero) {
-    hero.style.display = name === 'about' ? 'flex' : 'none';
-  }
+hero.style.display = name === 'about' ? 'grid' : 'none';  }
   window.scrollTo(0, 0);
 }
 
@@ -197,4 +196,12 @@ function toggleAccordion(el) {
   if (g2dl) { g2dl.href = tenetsUri; g2dl.setAttribute('download', 'Tenets_of_Osteopathic_Medicine.pdf'); }
   g2upload.style.display = 'none';
   g2container.style.display = 'block';
+  document.addEventListener('DOMContentLoaded', function () {
+  const hero = document.getElementById('home-hero');
+  const about = document.getElementById('tab-about');
+
+  if (hero && about && about.classList.contains('active')) {
+    hero.style.display = 'flex';
+  }
+});
 })();
