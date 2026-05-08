@@ -20,6 +20,10 @@ function showPage(id) {
   document.querySelectorAll('nav button').forEach(b => b.classList.remove('active'));
   var el = document.getElementById(id) || document.getElementById('tab-' + id);
   if (el) el.classList.add('active');
+  const hero = document.getElementById('home-hero');
+if (hero) {
+  hero.style.display = 'none';
+}
   window.scrollTo(0, 0);
 }
 
@@ -34,6 +38,10 @@ function showPageBack(id) {
       b.classList.add('active');
     }
   });
+  const hero = document.getElementById('home-hero');
+if (hero) {
+  hero.style.display = name === 'about' ? 'flex' : 'none';
+}
   window.scrollTo(0, 0);
 }
 
