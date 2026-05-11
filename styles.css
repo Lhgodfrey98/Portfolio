@@ -108,7 +108,7 @@ main{max-width:920px;margin:0 auto;padding:2.5rem 2rem 5rem}
 .modal-pane{display:none}
 .modal-pane.active{display:block}
 .modal-section{margin-bottom:1.5rem}
-.modal-section-label{font-size:10px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--muted-light);margin-bottom:8px}
+.modal-section-label{font-size:18px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--muted-light);margin-bottom:8px}
 .modal-section p{font-size:14px;color:var(--muted);line-height:1.75}
 .modal-section ul{padding-left:1rem;font-size:14px;color:var(--muted);line-height:1.85}
 .modal-section ul li{margin-bottom:2px}
