@@ -15,7 +15,7 @@ a{color:inherit;text-decoration:none}
 /* HEADER */
 .site-header{position:sticky;top:0;z-index:100;background:rgba(255,255,255,.93);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);border-bottom:.5px solid var(--border);padding:0 2rem}
 .header-inner{max-width:920px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;height:56px;gap:1rem}
-.header-name{font-size:15px;font-weight:700;color:var(--navy);letter-spacing:-.2px;white-space:nowrap}
+.header-name{font-size:30px;font-weight:700;color:var(--navy);letter-spacing:-.2px;white-space:nowrap}
 .header-name span{font-weight:400;color:var(--muted);font-size:13px;margin-left:6px}
 nav{display:flex;gap:2px;overflow-x:auto}
 nav button{background:none;border:none;padding:6px 11px;font-size:13px;font-family:'Urbanist',sans-serif;font-weight:500;color:var(--muted);cursor:pointer;border-radius:6px;transition:color var(--t),background var(--t);white-space:nowrap}
@@ -60,7 +60,7 @@ main{max-width:920px;margin:0 auto;padding:2.5rem 2rem 5rem}
 .exp-item.sky-dot::before{border-color:var(--sky)}.exp-item.sky-dot:hover::before{background:var(--sky)}
 .exp-item.orange-dot::before{border-color:var(--orange)}.exp-item.orange-dot:hover::before{background:var(--orange)}
 .exp-meta{display:flex;align-items:baseline;justify-content:space-between;gap:1rem;margin-bottom:4px}
-.exp-title{font-size:36px;font-weight:700;color:#000000(--text);}
+.exp-title{font-size:16px;font-weight:700;color:#000000(--text);}
 .exp-period{font-size:12px;font-weight:500;color:var(--muted-light);white-space:nowrap}
 .exp-org{font-size:13px;font-weight:600;color:#0d5f78;margin-bottom:10px}
 .exp-bullets{padding-left:1rem;font-size:14px;color:var(--muted);line-height:1.8}
