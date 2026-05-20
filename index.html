@@ -38,7 +38,7 @@ const PORTFOLIO = {
   about: {
     paragraphs: [
       "I grew up in Evansville, Indiana, and found my way to medicine through a combination of science, language, and a deep belief that healthcare should be accessible to everyone. Studying abroad in Chile and Spain shaped how I see patients, not just as cases, but as whole people navigating complex systems in a language that may not be their own.",
-      "I earned dual bachelor's degrees in Chemistry and Spanish from IUPUI, where I was a Bepko Scholar and graduated with highest honors. I then completed my Doctor of Osteopathic Medicine at Marian University Wood College of Osteopathic Medicine in Indianapolis, IN, graduating in December 2025, where I was selected as the Graduate Commencement Speaker for Marian University's Class of 2026.",
+      "I earned dual bachelor's degrees in Chemistry and Spanish from Indiana University-Purdue University Indianapolis, where I was a Bepko Scholar and graduated with highest honors. I then earned my Doctor of Osteopathic Medicine from Marian University Tom and Julie Wood College of Osteopathic Medicine in December 2025 and was selected as the Graduate Commencement Speaker for Marian University's Graduate Class of 2026 ceremony.",
       "At AACOM, I work at the intersection of medical education, student outreach, and physician recruitment, creating and supporting projects like a national DO Shadowing Network and educational resource initiatives that help connect prospective students to osteopathic medicine on a national level.",
       "In July 2026, I begin my internal medicine residency at the University of Kentucky, where I look forward to combining clinical depth with my ongoing commitment to medical education, health equity, and working with diverse and underserved populations.",
     ],
@@ -513,65 +513,6 @@ const PORTFOLIO = {
 </div>
 </div>
 
-
-<!-- ═══════ GRAPHICS PAGE ═══════ -->
-
-<div class="tab-section proj-page" id="graphics">
-<div class="page-header">
-<div class="page-header-inner">
-<div class="page-tag tag-sky">Visual Assets</div>
-<h2>Graphics for Download</h2>
-<p>Upload and preview graphics for use in advising, recruitment, and outreach materials.</p>
-<div class="hero-actions" style="margin-top:18px;">
-<button class="btn-ghost" onclick="showPageBack('projects')">← Back to Projects</button>
-</div>
-</div>
-</div>
-<div class="page-content">
-<div style="display:grid;grid-template-columns:1fr 1fr;gap:16px;">
-<!-- Graphic 1 -->
-<div class="info-card sky-accent">
-<h3>Graphic 1</h3>
-<div id="graphic1-upload" onclick="document.getElementById('graphic1-input').click()" ondragleave="this.style.background='var(--light-sky)';" ondragover="event.preventDefault();this.style.background='#d0f2fb';" ondrop="handleGraphicDrop(event,'graphic1-input','graphic1-img','graphic1-name','graphic1-container','graphic1-upload')" style="border:2px dashed var(--sky);border-radius:12px;padding:40px 20px;text-align:center;cursor:pointer;background:var(--light-sky);transition:all 0.18s;">
-<div style="font-size:36px;margin-bottom:10px;">🖼️</div>
-<div style="font-size:13px;font-weight:800;color:var(--dark-blue);margin-bottom:4px;">Upload Image</div>
-<div style="font-size:12px;color:var(--muted);">Click or drag &amp; drop a .png / .jpg</div>
-<input accept="image/png,image/jpeg,image/gif,image/webp" id="graphic1-input" onchange="handleGraphicFile(this.files[0],'graphic1-img','graphic1-name','graphic1-container','graphic1-upload')" style="display:none;" type="file"/>
-</div>
-<div id="graphic1-container" style="display:none;margin-top:12px;">
-<div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:8px;">
-<div id="graphic1-name" style="font-size:12px;font-weight:700;color:var(--dark-blue);overflow:hidden;text-overflow:ellipsis;white-space:nowrap;max-width:60%;"></div>
-<div style="display:flex;gap:6px;">
-<a download="" href="" id="graphic1-dl" style="padding:5px 12px;border-radius:7px;background:var(--orange);color:var(--dark-blue);font-family:'Urbanist',sans-serif;font-size:11px;font-weight:800;text-decoration:none;">↓ Download</a>
-<button onclick="clearGraphic('graphic1-img','graphic1-name','graphic1-container','graphic1-upload','graphic1-input','graphic1-dl')" style="padding:5px 10px;border-radius:7px;border:1px solid var(--border);background:#fff;color:var(--muted);font-family:'Urbanist',sans-serif;font-size:11px;font-weight:700;cursor:pointer;">✕</button>
-</div>
-</div>
-<img alt="Graphic 1" id="graphic1-img" src="" style="max-width:100%;border-radius:8px;box-shadow:0 4px 16px rgba(33,18,97,0.10);"/>
-</div>
-</div>
-<!-- Graphic 2 -->
-<div class="info-card dark-accent">
-<h3>Graphic 2</h3>
-<div id="graphic2-upload" onclick="document.getElementById('graphic2-input').click()" ondragleave="this.style.background='var(--light-blue)';" ondragover="event.preventDefault();this.style.background='#ddd8f5';" ondrop="handleGraphicDrop(event,'graphic2-input','graphic2-img','graphic2-name','graphic2-container','graphic2-upload')" style="border:2px dashed var(--dark-blue);border-radius:12px;padding:40px 20px;text-align:center;cursor:pointer;background:var(--light-blue);transition:all 0.18s;">
-<div style="font-size:36px;margin-bottom:10px;">🖼️</div>
-<div style="font-size:13px;font-weight:800;color:var(--dark-blue);margin-bottom:4px;">Upload Image</div>
-<div style="font-size:12px;color:var(--muted);">Click or drag &amp; drop a .png / .jpg</div>
-<input accept="image/png,image/jpeg,image/gif,image/webp" id="graphic2-input" onchange="handleGraphicFile(this.files[0],'graphic2-img','graphic2-name','graphic2-container','graphic2-upload')" style="display:none;" type="file"/>
-</div>
-<div id="graphic2-container" style="display:none;margin-top:12px;">
-<div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:8px;">
-<div id="graphic2-name" style="font-size:12px;font-weight:700;color:var(--dark-blue);overflow:hidden;text-overflow:ellipsis;white-space:nowrap;max-width:60%;"></div>
-<div style="display:flex;gap:6px;">
-<a download="" href="" id="graphic2-dl" style="padding:5px 12px;border-radius:7px;background:var(--orange);color:var(--dark-blue);font-family:'Urbanist',sans-serif;font-size:11px;font-weight:800;text-decoration:none;">↓ Download</a>
-<button onclick="clearGraphic('graphic2-img','graphic2-name','graphic2-container','graphic2-upload','graphic2-input','graphic2-dl')" style="padding:5px 10px;border-radius:7px;border:1px solid var(--border);background:#fff;color:var(--muted);font-family:'Urbanist',sans-serif;font-size:11px;font-weight:700;cursor:pointer;">✕</button>
-</div>
-</div>
-<img alt="Graphic 2" id="graphic2-img" src="" style="max-width:100%;border-radius:8px;box-shadow:0 4px 16px rgba(33,18,97,0.10);"/>
-</div>
-</div>
-</div>
-</div>
-</div>
 
 
 <!-- ═══════ BOARDS PAGE ═══════ -->
