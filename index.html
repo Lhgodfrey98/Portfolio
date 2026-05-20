@@ -7,12 +7,72 @@
 <link rel="preconnect" href="https://fonts.googleapis.com"/>
 <link href="https://fonts.googleapis.com/css2?family=Urbanist:wght@300;400;500;600;700;800&family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet"/>
 <link rel="stylesheet" href="styles.css"/>
+<script>
+/* ════════════════════════════════════════════════════════
+   PORTFOLIO CONFIG — edit all personal content here.
+   The render function at the bottom of <body> reads this
+   and injects it into the page. Touch nothing else for
+   routine updates.
+   ════════════════════════════════════════════════════════ */
+const PORTFOLIO = {
+  pageTitle: "Laurinda Godfrey, DO",
+  name:      "Laurinda Godfrey, DO",
+  nameTag:   "· Portfolio",
+
+  // ── EDIT: hero ────────────────────────────────────────
+  hero: {
+    eyebrow:        "Physician · Medical Educator · Indianapolis, IN",
+    h1:             ["Laurinda", "Godfrey,"],
+    h1Italic:       "DO",
+    description:    "I am a physician, educator, and advocate trained in osteopathic medicine, driven by health equity, and committed to building the systems that help the next generation of physicians find their path.",
+    avatarInitials: "LG",
+    pills: [
+      { text: "Medical Education Associate · AACOM" },
+      { text: "DO Shadow Network",             accent: "sky"    },
+      { text: "IM Residency · UK · July 2026", accent: "orange" },
+      { text: "Spanish · English" },
+    ],
+  },
+
+  // ── EDIT: about ───────────────────────────────────────
+  about: {
+    paragraphs: [
+      "I grew up in Evansville, Indiana, and found my way to medicine through a combination of science, language, and a deep belief that healthcare should be accessible to everyone. Studying abroad in Chile and Spain shaped how I see patients, not just as cases, but as whole people navigating complex systems in a language that may not be their own.",
+      "I earned dual bachelor's degrees in Chemistry and Spanish from IUPUI, where I was a Bepko Scholar and graduated with highest honors. I then completed my Doctor of Osteopathic Medicine at Marian University Wood College of Osteopathic Medicine in Indianapolis, IN, graduating in December 2025, where I was selected as the Graduate Commencement Speaker for Marian University's Class of 2026.",
+      "At AACOM, I work at the intersection of medical education, student outreach, and physician recruitment, creating and supporting projects like a national DO Shadowing Network and educational resource initiatives that help connect prospective students to osteopathic medicine on a national level.",
+      "In July 2026, I begin my internal medicine residency at the University of Kentucky, where I look forward to combining clinical depth with my ongoing commitment to medical education, health equity, and working with diverse and underserved populations.",
+    ],
+    sidebar: [
+      { label: "Current role", value: "Medical Education Associate<br>AACOM · Dept. of UME" },
+      { label: "Next step",    value: "Internal Medicine Residency<br>University of Kentucky · July 2026", accent: "orange" },
+      { label: "Based in",     value: "Washington, D.C." },
+      { label: "Degree",       value: "Doctor of Osteopathic Medicine<br>MU-WCOM · December 2025", accent: "sky" },
+      { label: "Languages",    value: "English (native)<br>Spanish (functionally native)" },
+    ],
+  },
+
+  // ── EDIT: contact ─────────────────────────────────────
+  contact: {
+    intro:         "I am always open to conversations about medical education, osteopathic medicine, AI in healthcare, or opportunities at the intersection of clinical medicine and education systems.",
+    email:         "Lhgodfrey2021@gmail.com",
+    linkedinUrl:   "https://www.linkedin.com/in/laurinda-godfrey-do-619011152/",
+    linkedinLabel: "laurinda-godfrey-do",
+    location:      "Indianapolis, IN",
+  },
+
+  // ── EDIT: footer ──────────────────────────────────────
+  footer: {
+    copyright: "© 2026 Laurinda Godfrey, DO · All rights reserved",
+  },
+};
+</script>
 </head>
 <body>
 
 <header class="site-header">
   <div class="header-inner">
-    <div class="header-name">Laurinda Godfrey, DO <span>· Portfolio</span></div>
+    <!-- EDIT: name → PORTFOLIO.name / PORTFOLIO.nameTag in <head> -->
+    <div class="header-name"></div>
     <nav>
       <button class="active" onclick="showTab('about',this)">About</button>
       <button onclick="showTab('experience',this)">Experience</button>
@@ -24,58 +84,30 @@
   </div>
 </header>
 
+<!-- EDIT: hero → PORTFOLIO.hero in <head> -->
 <section class="hero" id="home-hero">
   <div class="hero-body">
-    <p class="hero-eyebrow">Physician · Medical Educator · Indianapolis, IN </p>
-    <h1>Laurinda<br>Godfrey, <em>DO</em></h1>
-    <p class="hero-desc">I am a physician, educator, and advocate trained in osteopathic medicine, driven by health equity, and committed to building the systems that help the next generation of physicians find their path.</p>
-    <div class="hero-pills">
-      <span class="hero-pill">Medical Education Associate · AACOM</span>
-      <span class="hero-pill sky">DO Shadow Network</span>
-      <span class="hero-pill orange">IM Residency · UK · July 2026</span>
-      <span class="hero-pill">Spanish · English</span>
-    </div>
+    <p class="hero-eyebrow"></p>
+    <h1></h1>
+    <p class="hero-desc"></p>
+    <div class="hero-pills"></div>
   </div>
-  <div class="hero-avatar">LG</div>
+  <div class="hero-avatar"></div>
 </section>
 
 <main>
 
+<!-- EDIT: about → PORTFOLIO.about in <head> -->
 <!-- ABOUT -->
 <div class="tab-section active" id="tab-about">
   <p class="section-label">About me</p>
   <div class="about-grid">
-    <div class="about-body">
-      <p>I grew up in Evansville, Indiana, and found my way to medicine through a combination of science, language, and a deep belief that healthcare should be accessible to everyone. Studying abroad in Chile and Spain shaped how I see patients, not just as cases, but as whole people navigating complex systems in a language that may not be their own.</p>
-      <p>I earned dual bachelor's degrees in Chemistry and Spanish from IUPUI, where I was a Bepko Scholar and graduated with highest honors. I then completed my Doctor of Osteopathic Medicine at Marian University Wood College of Osteopathic Medicine in Indianapolis, IN, graduating in December 2025, where I was selected as the Graduate Commencement Speaker for Marian University's Class of 2026.</p>
-      <p>At AACOM, I work at the intersection of medical education, student outreach, and physician recruitment, creating and supporting projects like a national DO Shadowing Network and educational resource initiatives that help connect prospective students to osteopathic medicine on a national level.</p>
-      <p>In July 2026, I begin my internal medicine residency at the University of Kentucky, where I look forward to combining clinical depth with my ongoing commitment to medical education, health equity, and working with diverse and underserved populations.</p>
-    </div>
-    <div class="about-sidebar">
-      <div class="sidebar-card">
-        <p class="sidebar-card-label">Current role</p>
-        <p class="sidebar-card-value">Medical Education Associate<br>AACOM · Dept. of UME</p>
-      </div>
-      <div class="sidebar-card">
-        <p class="sidebar-card-label">Next step</p>
-        <p class="sidebar-card-value orange">Internal Medicine Residency<br>University of Kentucky · July 2026</p>
-      </div>
-      <div class="sidebar-card">
-        <p class="sidebar-card-label">Based in</p>
-        <p class="sidebar-card-value">Washington, D.C.</p>
-      </div>
-      <div class="sidebar-card">
-        <p class="sidebar-card-label">Degree</p>
-        <p class="sidebar-card-value sky">Doctor of Osteopathic Medicine<br>MU-WCOM · December 2025</p>
-      </div>
-      <div class="sidebar-card">
-        <p class="sidebar-card-label">Languages</p>
-        <p class="sidebar-card-value">English (native)<br>Spanish (functionally native)</p>
-      </div>
-    </div>
+    <div class="about-body"></div>
+    <div class="about-sidebar"></div>
   </div>
 </div>
 
+<!-- EDIT: experience — add/remove/reorder exp-item blocks below -->
 <!-- EXPERIENCE -->
 <div class="tab-section" id="tab-experience">
   <p class="section-label">Professional experience</p>
@@ -946,6 +978,7 @@
 <!-- JS FUNCTIONS USED BY THESE PAGES -->
 
 
+<!-- EDIT: skills — add/remove skill-pill spans and skills-section groups below -->
 <!-- SKILLS -->
 <div class="tab-section" id="tab-skills">
   <p class="section-label">Skills &amp; competencies</p>
@@ -995,6 +1028,7 @@
   </div>
 </div>
 
+<!-- EDIT: education — add/remove edu-item blocks below -->
 <!-- EDUCATION -->
 <div class="tab-section" id="tab-education">
   <p class="section-label">Education, honors &amp; training</p>
@@ -1043,37 +1077,74 @@
   </div>
 </div>
 
+<!-- EDIT: contact → PORTFOLIO.contact in <head> -->
 <!-- CONTACT -->
 <div class="tab-section" id="tab-contact">
   <p class="section-label">Get in touch</p>
   <div class="contact-wrap">
-    <p class="contact-intro">I am always open to conversations about medical education, osteopathic medicine, AI in healthcare, or opportunities at the intersection of clinical medicine and education systems.</p>
-    <div class="contact-links">
-      <a href="mailto:Lhgodfrey2021@gmail.com" class="contact-link">
-        <div class="contact-link-icon navy"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#211261" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg></div>
-        <div><p class="clabel">Email</p><p class="cvalue">Lhgodfrey2021@gmail.com</p></div>
-      </a>
-      <a href="https://www.linkedin.com/in/laurinda-godfrey-do-619011152/" target="_blank" rel="noopener" class="contact-link">
-        <div class="contact-link-icon sky"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#0d5f78" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg></div>
-        <div><p class="clabel">LinkedIn</p><p class="cvalue">laurinda-godfrey-do</p></div>
-      </a>
-      <div class="contact-link" style="cursor:default;">
-        <div class="contact-link-icon navy"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#211261" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg></div>
-        <div><p class="clabel">Location</p><p class="cvalue">Indianapolis, IN</p></div>
-      </div>
-    </div>
+    <p class="contact-intro"></p>
+    <div class="contact-links"></div>
   </div>
 </div>
 
 
 </main>
 
+<!-- EDIT: footer → PORTFOLIO.footer in <head> -->
 <footer>
-  <p>&#169; 2026 Laurinda Godfrey, DO &#xB7; All rights reserved</p>
+  <p></p>
   <div class="footer-badge"><div class="footer-dot"></div>Portfolio</div>
 </footer>
 
 
   <script src="script.js"></script>
+  <script>
+  /* render PORTFOLIO config → DOM (runs after script.js) */
+  (function () {
+    const P = PORTFOLIO;
+    const q = s => document.querySelector(s);
+
+    document.title = P.pageTitle;
+
+    // header
+    q('.header-name').innerHTML = P.name + ' <span>' + P.nameTag + '</span>';
+
+    // hero
+    q('.hero-eyebrow').textContent = P.hero.eyebrow;
+    q('.hero h1').innerHTML = P.hero.h1[0] + '<br>' + P.hero.h1[1] + ' <em>' + P.hero.h1Italic + '</em>';
+    q('.hero-desc').textContent = P.hero.description;
+    q('.hero-avatar').textContent = P.hero.avatarInitials;
+    q('.hero-pills').innerHTML = P.hero.pills
+      .map(p => `<span class="hero-pill${p.accent ? ' ' + p.accent : ''}">${p.text}</span>`)
+      .join('');
+
+    // about
+    q('.about-body').innerHTML = P.about.paragraphs.map(t => `<p>${t}</p>`).join('');
+    q('.about-sidebar').innerHTML = P.about.sidebar
+      .map(c => `<div class="sidebar-card">
+        <p class="sidebar-card-label">${c.label}</p>
+        <p class="sidebar-card-value${c.accent ? ' ' + c.accent : ''}">${c.value}</p>
+      </div>`).join('');
+
+    // contact
+    q('.contact-intro').textContent = P.contact.intro;
+    q('.contact-links').innerHTML = `
+      <a href="mailto:${P.contact.email}" class="contact-link">
+        <div class="contact-link-icon navy"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#211261" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg></div>
+        <div><p class="clabel">Email</p><p class="cvalue">${P.contact.email}</p></div>
+      </a>
+      <a href="${P.contact.linkedinUrl}" target="_blank" rel="noopener" class="contact-link">
+        <div class="contact-link-icon sky"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#0d5f78" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg></div>
+        <div><p class="clabel">LinkedIn</p><p class="cvalue">${P.contact.linkedinLabel}</p></div>
+      </a>
+      <div class="contact-link" style="cursor:default;">
+        <div class="contact-link-icon navy"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#211261" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg></div>
+        <div><p class="clabel">Location</p><p class="cvalue">${P.contact.location}</p></div>
+      </div>`;
+
+    // footer
+    q('footer p').textContent = P.footer.copyright;
+  })();
+  </script>
 </body>
 </html>
